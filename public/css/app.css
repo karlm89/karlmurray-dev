@@ -10644,3 +10644,119 @@ a.text-dark:focus {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 10px;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.content {
+  padding-top: 65px;
+  height: 83.6vh;
+}
+
+.credit {
+  text-align: center;
+  padding: 10px;
+}
+
+.credit a {
+  color: white;
+  text-decoration: underline;
+}
+
+.fab {
+  font-size: 26px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.flex-item {
+  align-self: auto;
+  width: 200px;
+}
+
+.footer {
+  flex-shrink: 0;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  width: 100%;
+  background-color: #007849;
+  color: white;
+}
+
+.footer-row {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-color: #0375B4;
+  color: white;
+  align-content: center;
+}
+
+.footer-row-item {
+  padding: 10px 60px;
+  text-align: center;
+}
+
+.footer-row-item a {
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: white;
+  border-bottom-color: #007849;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+}
+
+.nav-link {
+  color: grey;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.tech {
+  display: block;
+  margin: 5px;
+  padding: 20px;
+  padding-top: 0px;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+  .navbar-brand img {
+    max-width: 210;
+  }
+}
+
+@media (max-width: 990px) {
+  ul.nav.ml-auto {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
