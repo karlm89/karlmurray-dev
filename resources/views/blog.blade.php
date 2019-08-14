@@ -13,5 +13,6 @@
         @isset($article->category)
             <p>Category : {{$article->category}}</p>
         @endisset
+        <p>{{$article->created_at}}</p>
     @endforeach
 @endsection
