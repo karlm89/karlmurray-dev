@@ -11,16 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PageController@index');
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/blog','BlogController@index');
+
+Route::get('/projects','ProjectController@index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
