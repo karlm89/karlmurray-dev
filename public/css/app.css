@@ -10657,6 +10657,10 @@ body {
   height: 100vh;
 }
 
+.blog-item {
+  width: 320px;
+}
+
 .center {
   display: block;
   margin: auto;
