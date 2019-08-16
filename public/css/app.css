@@ -10653,6 +10653,10 @@ h6 {
   padding-top: 10px;
 }
 
+body {
+  height: 100vh;
+}
+
 .center {
   display: block;
   margin: auto;
@@ -10661,7 +10665,6 @@ h6 {
 
 .content {
   padding-top: 65px;
-  height: 83.6vh;
 }
 
 .credit {
@@ -10678,7 +10681,7 @@ h6 {
   font-size: 26px;
 }
 
-.flex {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10692,6 +10695,8 @@ h6 {
 }
 
 .footer {
+  position: relative;
+  bottom: 10px;
   flex-shrink: 0;
   /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   width: 100%;
