@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    @if(count($articles)>0)
+    @isset($articles)
         <div class="flex-container">
             @foreach($articles as $article)
                 <div class="flex-item blog-item">
@@ -20,5 +20,5 @@
                 </div>
             @endforeach
         </div>
-    @endif
+    @endisset
 @endsection
