@@ -13,8 +13,17 @@ h1,h2,h3,h4,h5,h6{
 body{
   height:100vh;
 }
+.blog-item{
+  width:33.3%;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+  border-radius: 5px;
+  margin:20px;
+  text-align: center;
+}
 .blog-item img{
-  width:320px;
+  width:100%;
 }
 .center{
   display:block;
@@ -45,7 +54,6 @@ body{
 }
 .flex-item{
   align-self: auto;
-  width: 200px;
 }
 .footer{
   position: relative;
