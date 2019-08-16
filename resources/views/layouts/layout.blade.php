@@ -7,7 +7,7 @@
         })(window,document,'script','dataLayer','GTM-5KDZ93R');</script>
     <!-- End Google Tag Manager -->
 
-    <title> @yield('title') | KarlMurray.dev</title>
+    <title> @yield('title') | karlmurray.dev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="public/storage/images/logo.gif" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -52,7 +52,7 @@
         </nav>
     </div>
 
-    <div class="container-fluid content">
+    <div class="content">
         @yield('content')
     </div>
     
