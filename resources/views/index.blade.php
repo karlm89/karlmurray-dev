@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-    <center><h1>Hello World</h1></center>
+    <center><h1>Karl Murray</h1></center>
 @endsection

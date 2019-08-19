@@ -21,6 +21,8 @@ Route::get('/blog/{slug}','BlogController@view');
 
 Route::get('/projects','ProjectController@index');
 
+Route::get('/project/{slug}','ProjectController@view');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
