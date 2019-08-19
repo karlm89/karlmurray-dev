@@ -31,6 +31,7 @@ body{
   border-radius: 5px;
   margin:20px;
   text-align: center;
+  background-color:#e6e6e6;
 }
 .blog-item img{
   width:100%;
@@ -108,6 +109,9 @@ body{
 }
 .nav-link:hover{
   color:black;
+}
+.link{
+  font-size: 18px;
 }
 .tech{
   display:block;
