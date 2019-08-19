@@ -8,7 +8,7 @@
     @isset($articles)
         <div class="flex-container">
             @foreach($articles as $article)
-                <div class="flex-item blog-item">
+                <div class="flex-item">
                     @isset($article->featured_image)
                         <img src={{ env('APP_STORAGE_URL').$article->featured_image }}>
                     @endisset
