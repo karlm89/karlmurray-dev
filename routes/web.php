@@ -17,6 +17,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/blog','BlogController@index');
 
+Route::get('/blog/{slug}','BlogController@view');
+
 Route::get('/projects','ProjectController@index');
 
 Route::group(['prefix' => 'admin'], function () {

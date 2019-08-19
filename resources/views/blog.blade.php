@@ -12,7 +12,7 @@
                     @isset($article->featured_image)
                         <img src={{ env('APP_STORAGE_URL').$article->featured_image }}>
                     @endisset
-                    <a href="/blog/view/{{$article->id}}"><h3>{{$article->title}}</h3></a>
+                    <a href="/blog/{{$article->slug}}"><h3>{{$article->title}}</h3></a>
                     @isset($article->category)
                         <p>Category : {{$article->category}}</p>
                     @endisset

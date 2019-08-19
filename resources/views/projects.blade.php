@@ -7,7 +7,12 @@
 @section('content')
     <div class="flex-container">
         <div class="flex-item">
-            <h3> Hello Projects </h3>
+            <h1> Projects </h1>
+            @isset($projects)
+                @foreach($projects as $project)
+                    <h3>hello</h3>
+                @endforeach
+            @endisset
         </div>
     </div>
 @endsection

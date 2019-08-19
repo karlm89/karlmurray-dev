@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProjectController extends Controller
 {
@@ -13,28 +14,11 @@ class ProjectController extends Controller
         return view('projects', compact('projects'));
     }
 
-    public function create()
+    public function view($slug)
     {
-        //
-    }
-
-    public function store(StoreArticlesRequest $request)
-    {
-        // 
-    }
-
-    public function edit($id)
-    {
-        //
-    }
-
-    public function update(UpdateArticlesRequest $request, $id)
-    {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
+        if(!$data = DB::table('projects')->where('slug',$slug)->first()){
+            abort(404);
+        }
+        return view('project', compact('data'));
     }
 }

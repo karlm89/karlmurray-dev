@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 use App\Article;
@@ -14,28 +14,11 @@ class BlogController extends Controller
         return view('blog', compact('articles'));
     }
 
-    public function create()
+    public function view($slug)
     {
-        //
-    }
-
-    public function store(StoreArticlesRequest $request)
-    {
-        // ... to be discussed later
-    }
-
-    public function edit($id)
-    {
-        // ... to be discussed later
-    }
-
-    public function update(UpdateArticlesRequest $request, $id)
-    {
-        // ... to be discussed later
-    }
-
-    public function destroy($id)
-    {
-        // ... to be discussed later
+        if(!$data = DB::table('articles')->where('slug',$slug)->first()){
+            abort(404);
+        }
+        return view('post', compact('data'));
     }
 }
