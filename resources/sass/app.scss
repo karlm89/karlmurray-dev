@@ -64,7 +64,7 @@ body{
   border-radius: 5px;
   margin:20px;
   text-align: center;
-  background-color:#e6e6e6;
+  background-color: $field-bg;
 }
 .flex-item img{
   width:100%;
@@ -80,7 +80,7 @@ body{
   padding: 20px;
   border-radius: 5px;
   text-align: center;
-  background-color:#e6e6e6;
+  background-color: $field-bg;
 }
 .footer{
   bottom: 0px;
