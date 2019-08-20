@@ -18,6 +18,7 @@ class ProjectController extends Controller
         if(!$data = DB::table('projects')->where('slug',$slug)->first()){
             abort(404);
         }
+        //dd($data);
         return view('project', compact('data'));
     }
 }
