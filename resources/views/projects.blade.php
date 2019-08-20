@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1> Projects </h1>
+    <h1 class="page-heading"> Projects </h1>
     @isset($projects)
         <div class="flex-container">
             @foreach($projects as $project)

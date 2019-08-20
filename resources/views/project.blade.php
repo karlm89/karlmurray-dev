@@ -6,6 +6,6 @@
 
 @section('content')
     <div class="flex-container">
-        <h1>{{ $data->title }}</h1>
+        <h1 class="page-heading">{{ $data->title }}</h1>
     </div>
 @endsection

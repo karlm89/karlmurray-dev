@@ -5,7 +5,9 @@
 @endsection
 
 @section('content')
-    <h1>Karl Murray</h1>
+    <img class="featured-img" src="/assets/header.jpg">
+
+    <h1 class="page-heading">Karl Murray</h1>
     <div class="flex-container">
         <div class="flex-item">
             <h4>Projects</h4>
@@ -15,8 +17,8 @@
         </div>
         <div class="flex-item">
             <h4>Technologies</h4>
-            @foreach($technologies as $tech)
-                <p>{{$tech->stack}}</p>
+            @foreach($tech as $data)
+                <p>{{$data->stack}}</p>
             @endforeach
         </div>
         <div class="flex-item">
@@ -37,5 +39,4 @@
             @endforeach
         </div>
     @endisset
-    <div></div>
 @endsection

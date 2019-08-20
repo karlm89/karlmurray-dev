@@ -10656,9 +10656,6 @@ h6 {
 
 body {
   background-color: #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 }
 
 .blog-content {
@@ -10675,8 +10672,10 @@ body {
 }
 
 .content {
-  padding-top: 65px;
-  height: 85.5vh;
+  padding-top: 40px;
+  min-height: 80vh;
+  display: block;
+  position: relative;
 }
 
 .credit {
@@ -10695,27 +10694,30 @@ body {
 
 .featured-img {
   width: 100%;
-  height: 300px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-bottom-color: #007849;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   align-content: center;
+  margin: 20px 0px;
+  width: 100%;
 }
 
 .flex-item {
-  align-self: auto;
-  width: 30%;
+  align-self: stretch;
   border-style: solid;
   border-width: 1px;
   padding: 20px;
   border-radius: 5px;
-  margin: 20px;
   text-align: center;
   background-color: #eeeeee;
 }
@@ -10727,9 +10729,7 @@ body {
 
 .fullwidth-container {
   display: block;
-  margin: auto;
-  margin-bottom: 20px;
-  width: 90%;
+  margin: 0px 20px 0px 20px;
   border-style: solid;
   border-width: 1px;
   padding: 20px;
@@ -10739,7 +10739,7 @@ body {
 }
 
 .footer {
-  bottom: 0px;
+  bottom: 0;
   flex-shrink: 0;
   width: 100%;
   background-color: #007849;
@@ -10753,11 +10753,11 @@ body {
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin-top: 20px;
   padding-bottom: 15px;
   background-color: #0375B4;
   color: white;
   align-content: center;
+  margin-top: 20px;
 }
 
 .footer-row-item {
@@ -10768,6 +10768,10 @@ body {
 .footer-row-item a {
   color: white;
   text-decoration: underline;
+}
+
+.link {
+  font-size: 18px;
 }
 
 .navbar {
@@ -10785,19 +10789,8 @@ body {
   color: black;
 }
 
-.link {
-  font-size: 18px;
-}
-
-.tech {
-  display: block;
-  margin: 5px;
-  padding: 20px;
-  padding-top: 0px;
-  border-color: darkgray;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 10px;
+.page-heading {
+  padding-top: 40px;
 }
 
 @media (max-width: 400px) {
@@ -10810,6 +10803,18 @@ body {
   ul.nav.ml-auto {
     text-align: center;
     justify-content: center;
+  }
+
+  .flex-item {
+    width: 100%;
+    margin: 10px 20px;
+  }
+}
+
+@media (min-width: 991px) {
+  .flex-item {
+    width: 20em;
+    margin: 20px;
   }
 }
 
