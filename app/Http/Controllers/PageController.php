@@ -9,10 +9,10 @@ class PageController extends Controller
 {
     public function index()
     {
-        $projects = DB::table('projects')->get();
-        $articles = DB::table('articles')->get();
-        $technologies = DB::table('projects')->get('stack');
-        $testimonials = DB::table('testimonials')->get();
+        $projects = DB::table('projects')->orderBy('updated_at','ASC')->get();
+        $articles = DB::table('articles')->orderBy('updated_at','DESC')->get();
+        $technologies = DB::table('projects')->orderBy('stack', 'ASC')->get('stack');
+        $testimonials = DB::table('testimonials')->orderBy('author', 'ASC')->get();
 
         $collection = collect($technologies);
         $tech = $collection->unique()->values()->all();
