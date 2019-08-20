@@ -14,15 +14,15 @@
             @endforeach
         </div>
         <div class="flex-item">
-            <h4>Blog Posts</h4>
-            @foreach($articles as $article)
-                <a href="/blog/{{$article->slug}}">" {{ $article->title}} "</a>
-            @endforeach
-        </div>
-        <div class="flex-item">
             <h4>Technologies</h4>
             @foreach($technologies as $tech)
                 <p>{{$tech->stack}}</p>
+            @endforeach
+        </div>
+        <div class="flex-item">
+            <h4>Blog Posts</h4>
+            @foreach($articles as $article)
+                <a href="/blog/{{$article->slug}}">" {{ $article->title}} "</a>
             @endforeach
         </div>
     </div>
