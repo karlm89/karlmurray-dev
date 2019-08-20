@@ -1,16 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
 
-use App\Article;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BlogController extends Controller
 {
     public function index()
     {
-        $articles = Article::all();
+        $articles = DB::table('articles')->get();
         return view('blog', compact('articles'));
     }
 

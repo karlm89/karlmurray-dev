@@ -10,7 +10,6 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = DB::table('projects')->orderBy('title')->get();
-
         return view('projects', compact('projects'));
     }
 
