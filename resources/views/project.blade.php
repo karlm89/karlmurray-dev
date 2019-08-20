@@ -13,8 +13,8 @@
         <div class="flex-item">
             <h4>Links :</h4>
             <a href={{ $data->link }}>Visit Website</a>
-            @if(!empty($data->repo))
-                <a href={{ $data->repo }}>Visit Github Repo</a>
+            @if($data->private == false)
+                <br><a href={{ $data->repo }} target="_blank">Visit Github Repo</a>
             @else
                 <p>Repo is set to private at client's request</p>
             @endif
