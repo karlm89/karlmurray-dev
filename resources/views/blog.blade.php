@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    <h1 class="page-heading">Blog</h1>
     @isset($articles)
         <div class="flex-container">
             @foreach($articles as $article)
