@@ -10,7 +10,7 @@
         <div class="flex-item">
             <h4>Projects</h4>
             @foreach($projects as $project)
-                <a href="/project/{{$project->slug}}">{{ $project->title}}</a>
+                <a href="/project/{{$project->slug}}">{{ $project->title}}</a><br>
             @endforeach
         </div>
         <div class="flex-item">
