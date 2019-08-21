@@ -22,6 +22,12 @@
             @endforeach
         </div>
         <div class="flex-item">
+            <h4>Interest</h4>
+            @foreach($interests as $interest)
+
+            @endforeach
+        </div>
+        <div class="flex-item">
             <h4>Blog Posts</h4>
             @foreach($articles as $article)
                 <a href="/blog/{{$article->slug}}">" {{ $article->title}} "</a>

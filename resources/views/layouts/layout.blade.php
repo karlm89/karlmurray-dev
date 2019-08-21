@@ -52,7 +52,7 @@
             <h4>Quick Links :</h4>
             <a href="https://www.facebook.com/karlm89" target="_blank"><i class="fab fa-facebook-square"></i></a> &nbsp;
             <a href="https://www.instagram.com/karlm89/" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;
-            <a href="https://twitter.com/karlplayswell" target="_blank"><i class="fab fa-twitter-square"></i></a>&nbsp;
+            <a href="https://twitter.com/karlplayswell" target="_blank"><i class="fab fa-twitter-square"></i></a>&nbsp;<br>
             <a href="https://www.linkedin.com/in/karl-murray-344409161/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;
             <a href="https://www.github.com/karlplayswell" target="_blank"><i class="fab fa-github-square"></i></a>&nbsp;
             <a href="https://freecodecamp.org/karlm89" target="_blank"><i class="fab fa-free-code-camp"></i></a>&nbsp;
