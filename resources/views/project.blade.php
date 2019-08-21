@@ -20,7 +20,7 @@
             @endif
         </div>
     </div>
-    @isset($challenges)
+    @if(count($challenges)>0)
         <div class="fullwidth-container">
             <h3>Challenges : </h3>
             @foreach($challenges as $challenge)
@@ -32,5 +32,5 @@
                 </ul>
             @endforeach
         </div>
-    @endisset
+    @endif
 @endsection
