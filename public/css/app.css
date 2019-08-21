@@ -10734,7 +10734,6 @@ body {
   border-width: 1px;
   padding: 20px;
   border-radius: 5px;
-  text-align: center;
   background-color: #eeeeee;
 }
 
@@ -10791,6 +10790,10 @@ body {
 
 .page-heading {
   padding-top: 40px;
+}
+
+.tab {
+  margin-left: 40px;
 }
 
 @media (max-width: 400px) {
