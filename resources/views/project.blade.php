@@ -5,7 +5,6 @@
 @endsection
 
 @section('content')
-
     <h1 class="page-heading">{{ $data->title }}</h1>
     <h2>{{ $data->stack }}</h2>
 
