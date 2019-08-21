@@ -24,8 +24,12 @@
         <div class="fullwidth-container">
             <h3>Challenges : </h3>
             @foreach($challenges as $challenge)
-                <p><b>{{ $challenge->problem }}</b></p>
-                <p class="tab">{{ $challenge->solution }}</p>
+                <ul>
+                    <li>
+                        <b>{{ $challenge->problem }}</b>
+                        <p class="tab">{{ $challenge->solution }}</p>
+                    </li>
+                </ul>
             @endforeach
         </div>
     @endisset
