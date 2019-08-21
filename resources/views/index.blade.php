@@ -12,7 +12,7 @@
             <div class="flex-item">
                 <h4>Projects :</h4>
                 @foreach($projects as $project)
-                    <a href="/project/{{$project->slug}}">{{ $project->title}}</a><br>
+                    <a href="/project/{{$project->slug}}">{{ $project->title}}</a> - <i class="subtle">{{ $project->stack }}</i> <br>
                 @endforeach
             </div>
         @endif
@@ -28,7 +28,7 @@
             <div class="flex-item">
                 <h4>Interested in Learning :</h4>
                 @foreach($interests as $interest)
-                    <p>{{ $interest->interest }}</p>
+                    <a href= {{ $interest->link }}>{{ $interest->interest }}</a> - {{ $interest->status }}
                 @endforeach
             </div>
         @endif
