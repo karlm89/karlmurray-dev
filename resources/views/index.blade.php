@@ -28,7 +28,7 @@
             <div class="flex-item">
                 <h4>Interested in Learning :</h4>
                 @foreach($interests as $interest)
-                    <a href= {{ $interest->link }}>{{ $interest->interest }}</a> - {{ $interest->status }}
+                    <a href= {{ $interest->link }}>{{ $interest->interest }} target="_blank"</a> - {{ $interest->status }} <br>
                 @endforeach
             </div>
         @endif
